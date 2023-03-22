@@ -13,7 +13,7 @@
     width: 100%;
     height: 100vh;
 
-    animation: fadeInAnimation ease 3s;
+    animation: fadeInAnimation ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode:both;
 }

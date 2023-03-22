@@ -16,8 +16,6 @@ function EndGameModal(props){
     const message  = props.isUserWon ? 'You Won' : 'Try Again' ;
     const duration = props.isUserWon ? 3000 : 0 ;
 
-    console.log(props.width);
-
     const style = {
         position: 'relative',
         top: '50%',
@@ -35,8 +33,6 @@ function EndGameModal(props){
         justifyContent : 'center',
         border:'3px solid #ffffff78'
     };
-
-    console.log(props);
 
     useEffect(()=>{
         setTimeout(()=>{

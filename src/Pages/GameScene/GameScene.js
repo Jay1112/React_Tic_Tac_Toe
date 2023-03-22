@@ -16,6 +16,7 @@ import { useNavigate } from 'react-router-dom';
 import { checkWinStates } from '../../utilities/CheckWinner';
 import EndGameModal from '../../Components/EndGameModal/EndGameModal';
 import Confetti from 'react-confetti';
+import { increaseWinCount, increaseLoseCount, increaseDrawCount } from '../../utilities/ChangeData';
 
 function GameScene(props){
     const {state,dispatch} = useAppContext();
@@ -108,6 +109,9 @@ function GameScene(props){
                     if(isUserTurn){
                         message = 'You Won';
                         setUserWon(true);
+                        increaseWinCount();
+                    }else{
+                        increaseLoseCount();
                     }
                     setGameEndMessage(message);
                     dispatch({ type : AppActions.END_GAME});
@@ -127,16 +131,18 @@ function GameScene(props){
                     if(isUserTurn){
                         message = 'You Won';
                         setUserWon(true);
+                        increaseWinCount();
+                    }else{
+                        increaseLoseCount();
                     }
+                }else{
+                    increaseDrawCount();
                 }
                 setGameEndMessage(message);
-                dispatch({ type : AppActions.END_GAME});
-                // doAlert(message);    
+                dispatch({ type : AppActions.END_GAME}); 
             }
         }
     }
-
-    console.log(state.isGameOver && isUserWon);
 
     function changeTurn(){
         setUserTurn(!isUserTurn);

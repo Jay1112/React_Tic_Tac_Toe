@@ -27,7 +27,7 @@ function MenuPage(){
             <div className="bottom_menu_page">
                 <div className="menu_item_box">
                     <MenuItem text="Play With AI" styleObj={styleObj} route='/pre_game' />
-                    <MenuItem text="Profile" styleObj={styleObj} route='/profile' />
+                    <MenuItem text="Game Statistics" styleObj={styleObj} route='/game_stats' />
                     <MenuItem text="About" styleObj={styleObj} route='/about'/>
                 </div>
             </div>

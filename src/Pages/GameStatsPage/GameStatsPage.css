@@ -1,0 +1,91 @@
+.GameStatsPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    background-color: var(--purple);
+
+    min-width: 300px;
+    max-width: 500px;
+    width: 100%;
+    height: 100vh;
+
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;   
+}
+
+.GameStatsPage_Bottom {
+    width: 100%;
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.GameStatsPage_Bottom > span {
+    color: white;
+    font-size: 1.25rem;
+}
+
+.GameStatsPage_Title {
+    flex: 1;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    .GameStatsPage_Title > span {
+        text-align: center;
+        padding: 10px 0;
+        font-family: 'Roboto';
+        color: white;
+        width: 100%;
+        font-size: 2rem;
+    }
+
+.GameStatsPage_Stats {
+
+    flex: 3;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.GameStatsPage_Stats > .data_item {
+
+    width: 80%;
+    padding: 10px 10px;
+    font-family: 'Roboto';
+    font-size: 1.5rem;
+    color: white;
+    border-bottom: 3px solid #00000032;
+    margin: 5px 0;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.GameStatsPage_Stats > .data_item > .key_item {
+    flex: 1;
+    font-weight: bold;
+}
+
+.GameStatsPage_Chart {
+    flex: 5;
+    width: 100%;  
+    padding: 20px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
