@@ -1,0 +1,64 @@
+.player_sprite_turn{
+    border: 2px solid transparent;
+    width: 120px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    height: 150px;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    background-color: #27185d;
+}
+
+.player_sprite_indicator {
+    position: absolute;
+    top: -50px;
+
+    animation: moveUpAndDown ease 0.5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-direction: alternate-reverse;
+}
+
+.player_sprite_profile {
+    width: 100%;
+    flex : 0.45;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .player_sprite_profile > img {
+        width: 40%;
+        border-radius: 25%;
+    }
+
+.player_sprite_name {
+    width: 100%;
+    flex : 0.15;
+
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.player_sprite_symbol {
+    width: 100%;
+    flex: 0.4;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .player_sprite_symbol > img{
+        width: 35%;
+        border-radius: 25%;
+    }

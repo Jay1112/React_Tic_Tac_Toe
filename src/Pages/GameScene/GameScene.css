@@ -1,0 +1,221 @@
+.game_scene_page {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+
+    flex-direction: column;
+
+    background-color: var(--purple);
+
+    min-width: 300px;
+    max-width: 500px;
+    width: 100%;
+    height: 100vh;
+
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode:both;
+}
+
+.game_scene_top_bar {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 10px;
+}
+
+.game_scene_mid_bar {
+    width: 100%;
+    flex: 2.5;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.user_turn{
+    border: 2px solid transparent;
+    width: 120px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    height: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 10px;
+
+    background-color: #27185d;
+}
+
+
+
+.user_indicator {
+    position: absolute;
+    top: -50px;
+
+    animation: moveUpAndDown ease 0.5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-direction: alternate-reverse;
+}
+
+.user_profile {
+    width: 100%;
+    flex : 0.45;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .user_profile > img {
+        width: 35%;
+        border-radius: 25%;
+    }
+
+.user_name {
+    width: 100%;
+    flex : 0.15;
+
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user_symbol {
+    width: 100%;
+    flex: 0.4;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .user_symbol > img{
+        width: 35%;
+        border-radius: 25%;
+    }
+
+.computer_turn{
+    border: 2px solid transparent;
+    width: 120px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    height: 150px;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    background-color: #27185d;
+}
+
+.computer_indicator {
+    position: absolute;
+    top: -50px;
+
+    animation: moveUpAndDown ease 0.5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-direction: alternate-reverse;
+}
+
+.computer_profile {
+    width: 100%;
+    flex : 0.45;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .computer_profile > img {
+        width: 40%;
+        border-radius: 25%;
+    }
+
+.computer_name {
+    width: 100%;
+    flex : 0.15;
+
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.computer_symbol {
+    width: 100%;
+    flex: 0.4;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .computer_symbol > img{
+        width: 35%;
+        border-radius: 25%;
+    }
+
+.game_scene_bottom_bar {
+    width: 100%;
+    flex : 4;
+    padding: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game_grid {
+    flex: 1;
+    aspect-ratio: 1;
+
+    padding: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    background-color: #674ac4;
+
+    border-radius: 5px;
+}
+
+.grid_item {
+    width: calc(calc(90%-50px)/3);
+    aspect-ratio: 1;
+    border-radius: 5px;
+    background-color: #332167;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes moveUpAndDown {
+    0% {
+        transform: translateY(-40px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
