@@ -16,7 +16,7 @@ Chart.register(CategoryScale);
 
 function App(props) {
   const timeOut = 3000; 
-  const [isSplashScreen,setSplashScreenLoading] = useState(false);
+  const [isSplashScreen,setSplashScreenLoading] = useState(true);
 
   useEffect(()=>{
     if(isSplashScreen){
