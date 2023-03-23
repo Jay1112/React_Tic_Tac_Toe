@@ -51,7 +51,7 @@ function GameStatsPage(props){
                     <Stripe keyName="Won" value={won} />
                     <Stripe keyName="Lose" value={lose} />
                     <Stripe keyName="Draw" value={draw} />
-                    <Stripe keyName="Total" value={won + lose} />
+                    <Stripe keyName="Total" value={won + lose + draw} />
                 </div>
                 <div className='GameStatsPage_Chart'>
                     {

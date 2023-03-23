@@ -1,7 +1,7 @@
 .AboutPage {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 
     flex-direction: column;
 
@@ -19,7 +19,7 @@
 
 .AboutPage_Bottom {
     width: 100%;
-    flex: 1;
+    flex: 0.75;
 
     display: flex;
     align-items: center;
@@ -27,7 +27,90 @@
     flex-direction: column;
 }
 
-.AboutPage_Bottom > span {
+.AboutPage_Image {
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    padding: 10px;
+
+    width: 50%;
+    aspect-ratio: 1;
+
+    animation: zoom-in-zoom-out 3s ease-out infinite;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.AboutPage_Image > img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.AboutPage_Name {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 0;
+}
+
+.AboutPage_Name > span {
+    text-align: center;
+    display: block;
     color: white;
-    font-size: 1.25rem;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.AboutPage_Profile{
+    width: 100%;
+    margin-top: 0px;
+    padding: 10px 0;
+}
+
+.AboutPage_Profile > span {
+    text-align: center;
+    display: block;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.AboutPage_Contact{
+    width: 100%;
+    margin-top: 0px;
+    padding: 10px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.icon {
+    width: 80px;
+    aspect-ratio: 1;
+    margin: 0 20px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(0.9, 0.9);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
 }
